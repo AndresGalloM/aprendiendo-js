@@ -176,3 +176,81 @@ var coercion = true
 console.log(String(coercion)) // "true"
 console.log(Number(coercion)) // 1
 ```
+
+------------
+
+#### Operadores: Asignación, Comparación y Aritméticos.
+
+Para realizar operaciones en JavaScript es necesario conocer los diferentes tipos de operadores que necesitarás. Los tipos de operadores en el lenguaje son: aritméticos, asignación y comparación.
+
+**Qué son los operadores aritméticos:**
+Los operadores aritméticos se utilizan para efectuar operaciones matemáticas.Para realizar las operaciones básicas, como suma, resta, multiplicación y división; utiliza los siguientes operadores:
+
+```javascript
+2 + 3 // Suma
+5 - 3 // Resta
+4 * 2 // Multiplicación
+6 / 2 // División
+10 % 5 // Modulo
+9 ** 4 // Potencia
+```
+
+**Qué son los operadores de comparación:**
+Un operador de comparación compara dos o más valores y devuelve un valor lógico (verdadero o falso).
+
+**Qué son los operadores de igualdad:**
+Existen dos tipos de igualdad:
+
+- **Igualdad por valor (==):** compara dos variables solamente por su valor. Por ejemplo: "3" de tipo string y 3 de tipo número son iguales.
+- **Igualdad por valor y tipo de dato (===): ** compara dos variables por su valor y tipo de dato. Por ejemplo: "3" de tipo string y 3 de tipo número no son iguales. Solamente 3 y 3, ambos de tipo número son iguales.
+
+```javascript
+//Igualdad
+"3" == 3 // true
+3 == 3 // true
+
+// Igualdad estricta
+"3" === 3 // false
+3 === 3 // true
+```
+
+**Qué son los operadores de desigualdad:**
+Igualmente que los operadores de igualdad, existen dos tipos:
+
+- **Desigualdad por valor (!=)**
+- **Desigualdad por valor y tipo de dato (!==)**
+
+```javascript
+//Desigualdad
+"3" != 3 // false
+3 != 3 // false
+
+// Desigualdad estricta
+"3" !== 3 // true
+3 !== 3 // false
+```
+
+**Qué son los operadores lógicos:**
+Los operadores lógicos comparan dos o más expresiones y devuelve un valor lógico (verdadero o falso). Las expresiones son comparaciones entre valores, se utiliza en conjunto con los operadores de comparación.
+
+**Qué es el operador disyunción lógico:**
+El operador de disyunción o AND ( && ) devuelve verdadero, si y solo si ambas expresiones son verdadero. Se lee de la siguiente manera: “La expresión 1 es verdadero Y la expresión 2 es verdadero, entonces es verdadero”.
+
+```javascript
+var a = 15
+var b = 5
+
+(a >= 10) && (a <= 20) // true
+(b >= 10) && (b <= 20) // false
+```
+
+**Qué es el operador unión lógico:**
+El operador de unión u OR ( || ) devuelve verdadero, si y solo si, alguna expresión es verdadero. Se lee de la siguiente manera: “La expresión 1 es verdadero O la expresión 2 es verdadero, entonces es verdadero.
+
+```javascript
+var a = 15
+var b = 5
+
+(a <= 10) || (a >= 20) // false
+(b <= 10) || (b >= 20) // true
+```
