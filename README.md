@@ -22,3 +22,27 @@ Los tipos de datos de objeto o no primitivos son los siguientes:
 
 Palabra reservada **`typeof`**
 - La palabra reservada typeof permite identificar el tipo de dato de un valor en JavaScript. Existe una excepción, al ejecutar typeof null, en la consola mostrará **`'object'`**, esto es un error dentro JavaScript.
+
+------------
+#### Variables
+Una variable es la representación de un lugar que reservamos en memoria para guardar un valor. El valor puede ser cualquier tipo de dato, inclusive objetos o funciones.
+
+**Declaración y asignación de variables en JavaScript**
+En JavaScript tenemos tres formas de declarar una variable las cuales son: **`var`**, **`const`** y **`let`**, seguido del nombre de la variable. Esto se denomina declaración. El uso de cada forma se vera mas adelante.
+
+```javascript
+var nombre
+```
+De esta manera, existirá un espacio en memoria que haga referencia a la variable nombre, pero por defecto tendrá un valor undefined.Para guardar un valor en esa variable, se utiliza el símbolo de igual ( = ) , seguido del valor. Esto se denomina asignación.
+
+```javascript
+var nombre
+nombre = "JavaScript"
+```
+
+Se puede declarar y asignar en una misma línea, sin repetir el nombre de la variable. A esto se le dice inicializar una variable.
+
+```javascript
+var nombre = "JavaScript"
+```
+
