@@ -133,3 +133,32 @@ console.log(nombre)
 Primeramente, al invocarse la función **`saludo`** imprimirá **`"Andres"`** por consola, pero inmediatamente después, existirá un error de referencia.
 
 Esto sucede porque la variable **`nombre` ** tiene un scope local, por lo que solo se puede acceder dentro de la misma, Esto sucede porque JavaScript no puede volver a buscar a una función que no sabe si encontrará la variable o no, teniendo en cuenta que puede haber una variedad ilimitada de funciones, ¿cuál buscar? Por eso, el alcance de una función local es el lugar donde fue declarada.
+
+------------
+
+#### Hoisting
+
+Hoisting es un término para describir que las declaraciones de variables y funciones son desplazadas a la parte superior del scope más cercano, scope global o de función. Esto sucede solamente con las declaraciones y no con las asignaciones.
+
+El código permanece igual, solo es una interpretación del motor de JavaScript. En el caso de las variables solamente sucede cuando son declaradas con **`var`**.
+
+**Hoisting en variables declaradas con var**
+Mira el siguiente código, ¿qué crees que sea el resultado del **`console.log`**?
+
+```javascript
+console.log(nombre) // undefined
+var nombre = "Andres" 
+```
+
+**Hoisting en funciones:**
+Mira el siguiente código, ¿qué crees que sea el resultado del console.log?
+
+```javascript
+console.log( saludar() )
+
+function saludar() {
+  return "Hola"
+}
+```
+
+Las funciones siempre se mueven arriba del scope. Por lo tanto, podemos elegir donde declararlas y usarlas, aunque es buena practica hacer la declaracion siempre al inicio.
