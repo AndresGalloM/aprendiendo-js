@@ -162,3 +162,17 @@ function saludar() {
 ```
 
 Las funciones siempre se mueven arriba del scope. Por lo tanto, podemos elegir donde declararlas y usarlas, aunque es buena practica hacer la declaracion siempre al inicio.
+
+------------
+
+#### Coerción
+
+Coerción es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción:
+**Coerción implícita:** es cuando el lenguaje nos ayuda a cambiar el tipo de valor.
+**Coerción explicita:** es cuando obligamos a que cambie el tipo de valor.
+
+```javascript
+var coercion = true
+console.log(String(coercion)) // "true"
+console.log(Number(coercion)) // 1
+```
