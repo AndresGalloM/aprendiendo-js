@@ -75,6 +75,7 @@ suma(2,3)
 ```
 
 **Qué son las funciones expresivas o anónimas**
+
 Las funciones expresivas o anónimas consisten en guardar la función en una variable. Tienen la misma declaración e invocación que las funciones declarativas. La diferencia consiste en no especificar un nombre en la función, sino que utiliza el nombre de la variable.
 
 ```javascript
