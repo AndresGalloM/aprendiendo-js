@@ -361,3 +361,47 @@ El índice es la forma en que accedemos a los elementos de los arrays. En JavaSc
 ```javascript
 var array = [1,2,3,4]
 ```
+
+------------
+
+#### Loops
+
+Un bucle (loop) o ciclo repetitivo es una estructura de control que te permite realizar una o varias instrucciones mientras una condición sea verdadera.
+
+**Existen dos tipos de ciclos repetitivos:**
+- **`For`** (para)
+- **`While`** (mientras)
+
+**Qué es un ciclo for:**
+Para el ciclo for conocemos la cantidad de veces que la estructura repetirá una o varias instrucciones.
+
+Por ejemplo, si queremos los 10 primeros números, sabemos que el ciclo se repetirá 10 veces. Si accedemos a los elementos de un array, sabemos que el ciclo se repetirá length veces.
+
+La estructura del ciclo for es la siguiente:
+
+```javascript
+for (condición) {
+    // Bloque de código
+}
+```
+
+**La condición consta de tres partes:**
+
+**Inicio:** se debe inicializar una variable que será evaluada en la expresión a comparar. Esta variable puede ser declarada dentro o fuera de la condición.
+**Comparación:** es una expresión que debe cumplir la variable inicial, cuando no se cumpla, el ciclo termina.
+**Pasos:** son los intervalos que cambiará la variable inicial, mientras cumpla con la expresión de comparación.
+
+Cada una de las partes debe estar separada por un punto y coma ( ;).
+
+**Por ejemplo, generemos los números del 1 al 10:**
+
+**Inicio:** inicializamos una variable con el valor de 1, generalmente se utiliza i (índice) como variable para el bucle, pero no es obligatorio. En este caso usaremos **`var num = 1`**.
+**Condición:** La condición será mientras sea menor o igual que 10 (num <= 10),
+**Pasos:** Debemos aumentar la variable en una unidad, por lo tanto, podemos utilizar num = num +1, num += 1 o num++. Este último únicamente cuando la variable aumente una unidad.
+La estructura es la siguiente:
+
+```javascript
+for (var num = 1; num <= 10; num++) {
+  console.log(i)
+}
+```
