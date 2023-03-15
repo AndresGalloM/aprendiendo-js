@@ -349,3 +349,15 @@ switch (expresion) {
   }
 }
 ```
+
+------------
+
+#### Arrays
+
+Un array es una estructura de datos que permite almacenar una serie de datos localizados por índices y separados por comas.
+
+**Qué son los índices:**
+El índice es la forma en que accedemos a los elementos de los arrays. En JavaScript, los índices empiezan desde 0, es decir, la primera posición es el índice 0. Un array se inicia mediante la sintaxis de corchetes [] y es tipo de dato objeto.
+```javascript
+var array = [1,2,3,4]
+```
