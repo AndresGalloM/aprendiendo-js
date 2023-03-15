@@ -405,3 +405,83 @@ for (var num = 1; num <= 10; num++) {
   console.log(i)
 }
 ```
+
+Para el ciclo while no conocemos la cantidad de veces que la estructura repetirá una o varias instrucciones. Aunque también se puede acoplar para que realice un determinado número de repeticiones.
+
+Por ejemplo, si queremos que un usuario ingrese un valor mayor a 0, no sabremos cuántas veces se equivocará. También, si queremos que un programa se ejecute hasta que el usuario ingrese una opción para salir.
+
+La estructura del ciclo while es la siguiente:
+
+```javascript
+while (condición) {
+    // Bloque de código
+    // Cambiar la condición para salir del bucle
+}
+```
+
+En este caso la condición es una expresión lógica a evaluar, si es verdadero repite el bloque de código, si es falso el ciclo termina. Debido a esto, necesitas cambiar la variable de la condición, para que no existe un bucle infinito.
+
+------------
+
+#### Objetos
+
+Un objeto es una estructura de datos que permite almacenar valores mediante **`propiedad: valor`** a través de la sintaxis de llaves ({}) y separados por comas.
+
+En las propiedades del objeto es opcional colocar las comillas. En el caso de que haya espacios, es obligatorio.
+
+```javascript
+var objeto = {
+    clave1: "valor1",
+   "clave 2": "valor2",
+}
+```
+
+Excepto por los primitivos y las funciones, todo es un objeto en JavaScript.
+
+**Qué son los atributos y métodos:**
+En programación orientada a objetos, un objeto es una representación de la realidad, en el cual sus características propias se definen como atributos y sus acciones se definen como métodos.
+
+En otras palabras, los atributos son las variables y los métodos son las funciones propias de cada objeto.
+
+Por ejemplo, definamos el objeto miAuto. Se coloca entre comillas la propiedad año porque el lenguaje no admite caracteres especiales del español. Aunque en ciertas situaciones si admite.
+
+```javascript
+var miAuto = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    "año": 2020,
+    detalle: function () {
+        console.log("Es un auto")
+    }
+}
+```
+
+Las propiedades **`marca`**, **`modelo`** y **`"año"`** son los atributos del objeto **`miAuto`**. La propiedad **`detalle`** es un método del objeto **`miAuto`**.
+
+**Cómo acceder a los valores de un objeto:**
+A diferencia de los arrays, únicamente es necesario saber la propiedad del objeto para acceder a su valor.
+
+Existen dos formas para acceder al valor de un objeto:
+
+- Mediante la notación de corchetes **`objeto["propiedad"]`**
+- Mediante la notación de punto **`objeto.propiedad`**
+
+**Cómo modificar propiedades de un objeto:**
+Para modificar propiedades de un objeto, utilizamos la notación de corchetes o de punto con la propiedad específica, asignándole su nuevo valor.
+
+Por ejemplo, modifiquemos la propiedad **`marca`**, de "Toyota" a "Ford", del objeto **`miAuto`**.
+
+```javascript
+miAuto["marca"] = "Ford"
+miAuto.marca = "Ford"
+```
+
+**Cómo eliminar propiedades de un objeto:**
+Para eliminar propiedades de un objeto, utilizamos la palabra reservada **`delete`** seguido de la propiedad del objeto.
+
+Por ejemplo, eliminemos la propiedad **`marca`** del objeto **`miAuto`**.
+
+```javascript
+delete miAuto["marca"]
+delete miAuto.marca
+```

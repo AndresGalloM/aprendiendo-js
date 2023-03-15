@@ -8,3 +8,6 @@ for (let estudiante of estudiantes) {
     console.log(`Hola ${estudiante}`)
 }
 
+while (estudiantes.length > 0) {
+    console.log(`hola ${estudiantes.shift()}`)
+}
