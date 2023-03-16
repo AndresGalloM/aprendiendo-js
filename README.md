@@ -696,4 +696,4 @@ var existeArticulo = articulos.some(function (articulo) {
 console.log(existeArticulo) // true
 ```
 
-Fin del curso basico
+Fin del curso basico js💚
