@@ -9,12 +9,13 @@
 <body>
     <h1>Manipulación del DOM básica</h1>
 
-    <input type="text" id="calculo1" placeholder="Escribe algo aqui">
-    <input type="text" id="calculo2" placeholder="Escribe algo aqui">
+    <form id="formulario">
+        <input type="text" id="calculo1" placeholder="Escribe algo aqui" name="num1">
+        <input type="text" id="calculo2" placeholder="Escribe algo aqui" name="num2">
 
-    <!-- <button id="btn-calcular" onclick="calcular();">Calcular</button> -->
-    <button id="btn-calcular" onclick="calcular();">Calcular</button>
-
+        <!-- <button id="btn-calcular" onclick="calcular();">Calcular</button> -->
+        <button id="btn-calcular">Calcular</button>
+    </form>
     <p id="resultado"></p>
 
     <script src="script.js"></script>
