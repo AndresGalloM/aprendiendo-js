@@ -52,5 +52,4 @@ parrafo2.append(img);
 
 // Remplaza el contenido
 pid.replaceWith(img);
-
  
