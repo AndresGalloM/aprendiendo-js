@@ -5,10 +5,13 @@ function obtenerElemento(elemento) {
 const correo = obtenerElemento('.email');
 const menu = obtenerElemento('.desktop-menu');
 const menuHanIcon = obtenerElemento('.icono-menu');
-const menuMobil = obtenerElemento('.mobile-menu')
-const carritoIcon = obtenerElemento('.navbar-shopping-cart')
-const carritoLista = obtenerElemento('.my-card')
-const gridProductos = obtenerElemento('.cards-container')
+const menuMobil = obtenerElemento('.mobile-menu');
+const carritoIcon = obtenerElemento('.navbar-shopping-cart');
+const carritoLista = obtenerElemento('.my-card');
+const gridProductos = obtenerElemento('.cards-container');
+const productoInfo = obtenerElemento('.product-detail');
+const btnCloseInfo = obtenerElemento('.close')
+const listaElementos = [menu, menuMobil, carritoLista]
 
 
 function agregarClass(elemento, lista) {
@@ -17,13 +20,20 @@ function agregarClass(elemento, lista) {
             element.classList.add('inactivo')
         }
     });
-    elemento.classList.toggle('inactivo')
+
+    if (elemento) {
+        elemento.classList.toggle('inactivo')
+    }
 }
 
 function renderizarProductos(arrayProductos) {
-    for (producto of listaProductos) {
+    for (producto of arrayProductos) {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
+        productCard.addEventListener('click', () => {
+            agregarClass(false, listaElementos)
+            productoInfo.classList.remove('inactivo')
+        });
     
         const imagenProducto = document.createElement('img');
         imagenProducto.classList.add('product-image');
@@ -57,16 +67,17 @@ function renderizarProductos(arrayProductos) {
     }
 }
 
-const listaElementos = [menu, menuMobil, carritoLista]
-
 correo.addEventListener('click', () => {
-    agregarClass(menu, listaElementos)
+    agregarClass(menu, listaElementos);
 });
 menuHanIcon.addEventListener('click', () => {
-    agregarClass(menuMobil, listaElementos)
+    agregarClass(menuMobil, listaElementos);
 });
 carritoIcon.addEventListener('click', () => {
-    agregarClass(carritoLista, listaElementos)
+    agregarClass(carritoLista, listaElementos);
+})
+btnCloseInfo.addEventListener('click', () => {
+    productoInfo.classList.add('inactivo');
 })
 
 const listaProductos = [
